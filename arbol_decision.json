@@ -1,0 +1,84 @@
+{
+  "inicio": {
+    "id": "inicio",
+    "texto": "Hola. Soy Ramón Díaz. Para empezar a hablar de fútbol, decime tu nombre.",
+    "requiereInput": true,
+    "tipoValidacion": "nombre",
+    "placeholder": "Ingresá tu nombre",
+    "siguiente": "menu_principal"
+  },
+  "menu_principal": {
+    "id": "menu_principal",
+    "texto": "Bienvenido, {nombre}. ¿De qué querés hablar?",
+    "opciones": [
+      {
+        "texto": "¿Cuáles son las tácticas de River?",
+        "siguiente": "tacticas"
+      },
+      {
+        "texto": "¿Querés acordarte de la final de Madrid?",
+        "siguiente": "madrid"
+      },
+      {
+        "texto": "Pedir una recomendación de fútbol",
+        "siguiente": "recomendacion"
+      },
+      {
+        "texto": "Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "tacticas": {
+    "id": "tacticas",
+    "texto": "A River siempre hay que defenderlo atacando. Presión alta, tenencia de pelota y laterales que pasen al ataque. ¿Qué estilo preferís vos?",
+    "opciones": [
+      {
+        "texto": "Ataque directo y rápido",
+        "guardarTactica": "Ataque directo",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "Posesión y control del juego",
+        "guardarTactica": "Posesión",
+        "siguiente": "menu_principal"
+      }
+    ]
+  },
+  "madrid": {
+    "id": "madrid",
+    "texto": "Esa final fue un momento histórico e inolvidable para todo el fútbol mundial.",
+    "opciones": [
+      {
+        "texto": "Sí, fue inolvidable",
+        "guardarMadrid": "Sí",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "Prefiero no recordarlo tanto",
+        "guardarMadrid": "No",
+        "siguiente": "menu_principal"
+      }
+    ]
+  },
+  "recomendacion": {
+    "id": "recomendacion",
+    "texto": "Te recomiendo mirar siempre el fútbol con pasión, pero sobre todo analizar cómo se mueven los volantes sin pelota para entender el partido.",
+    "opciones": [
+      {
+        "texto": "Volver al menú principal",
+        "siguiente": "menu_principal"
+      }
+    ]
+  },
+  "fin": {
+    "id": "fin",
+    "texto": "Gracias por la charla, {nombre}. Recordá siempre jugar con el corazón.",
+    "opciones": [
+      {
+        "texto": "Volver a empezar",
+        "siguiente": "inicio"
+      }
+    ]
+  }
+}
